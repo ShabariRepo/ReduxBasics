@@ -13,12 +13,12 @@ import {
 } from 'react-native';
 import { Provider } from 'react-redux';
 import { CreateStore } from 'redux';
-
+import reducers from './reducers';
 
 class App extends Component<{}> {
   render() {
     return (
-      <Provider store={CreateStore}>
+      <Provider store={CreateStore(reducers)}>
         <View style={styles.container}>
 
         </View>
