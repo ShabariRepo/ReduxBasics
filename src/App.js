@@ -18,8 +18,9 @@ import LibraryList from './components/LibraryList';
 
 const App = () => {
   return (
+    // for the inline style there are two {{}} one is for JSX & second for JS Object designation
     <Provider store={createStore(reducers)}>
-      <View>
+      <View style={{ flex: 1 }}>
         <Header headerText="Tech Stack" />
         {<LibraryList />}
       </View>
