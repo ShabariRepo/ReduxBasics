@@ -14,13 +14,14 @@ import {
 import { Provider } from 'react-redux';
 import { CreateStore } from 'redux';
 import reducers from './reducers';
+import { Header } from "./components/common";
 
 class App extends Component<{}> {
   render() {
     return (
       <Provider store={CreateStore(reducers)}>
         <View style={styles.container}>
-
+          <Header headerText="Tech Stack" />
         </View>
       </Provider>
     );
